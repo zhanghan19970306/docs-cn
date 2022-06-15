@@ -13,6 +13,7 @@ import {
   vitestName,
 } from './meta'
 import { teamMembers } from './contributors'
+import { link } from 'fs'
 
 export default defineConfig({
   lang: 'zh-cn',
@@ -52,50 +53,36 @@ export default defineConfig({
       text: '建议更改此页面',
     },
 
-    algolia: {
-      appId: 'ZTF29HGJ69',
-      apiKey: '9c3ced6fed60d2670bb36ab7e8bed8bc',
-      indexName: 'vitest',
-      // searchParameters: {
-      //   facetFilters: ['tags:en']
-      // }
-    },
+    // algolia: {
+    //   appId: 'ZTF29HGJ69',
+    //   apiKey: '9c3ced6fed60d2670bb36ab7e8bed8bc',
+    //   indexName: 'vitest',
+    //   // searchParameters: {
+    //   //   facetFilters: ['tags:en']
+    //   // }
+    // },
 
-    localeLinks: {
-      text: '简体中文',
-      items: [
-        { text: 'English', link: 'https://vitest.dev' },
-      ],
-    },
+    // localeLinks: {
+    //   text: '简体中文',
+    //   items: [
+    //     { text: 'English', link: 'https://vitest.dev' },
+    //   ],
+    // },
 
     socialLinks: [
-      { icon: 'twitter', link: twitter },
-      { icon: 'discord', link: discord },
       { icon: 'github', link: github },
     ],
 
-    footer: {
-      message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2021-PRESENT Anthony Fu, Matías Capeletto and Vitest contributors',
-    },
+    // footer: {
+    //   message: 'Released under the MIT License.',
+    //   copyright: 'Copyright © 2021-PRESENT Anthony Fu, Matías Capeletto and Vitest contributors',
+    // },
 
     nav: [
       { text: '指引', link: '/guide/' },
       { text: 'API', link: '/api/' },
       { text: '配置', link: '/config/' },
-      {
-        text: `v${version}`,
-        items: [
-          {
-            text: '版本发布',
-            link: releases,
-          },
-          {
-            text: '社区指南',
-            link: contributing,
-          },
-        ],
-      },
+      { text: `v${version}`, link: '/config/' },
     ],
 
     sidebar: {

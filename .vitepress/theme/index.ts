@@ -4,7 +4,7 @@ import { inBrowser } from 'vitepress'
 import '../style/main.css'
 import '../style/vars.css'
 import 'uno.css'
-import HomePage from '../components/HomePage.vue'
+// import HomePage from '../components/HomePage.vue'
 
 if (inBrowser)
   import('./pwa')
@@ -12,8 +12,6 @@ if (inBrowser)
 export default {
   ...Theme,
   Layout() {
-    return h(Theme.Layout, null, {
-      'home-features-after': () => h(HomePage),
-    })
+    return h(Theme.Layout, null)
   },
 }
