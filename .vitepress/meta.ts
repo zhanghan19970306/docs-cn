@@ -15,11 +15,11 @@ export const ogUrl = 'https://vitest.dev/'
 export const ogImage = `${ogUrl}og.png`
 
 /* GitHub and social links */
-export const github = 'https://github.com/vitest-dev/vitest'
-export const releases = 'https://github.com/vitest-dev/vitest/releases'
-export const contributing = 'https://github.com/vitest-dev/vitest/blob/main/CONTRIBUTING.md'
-export const discord = 'https://chat.vitest.dev'
-export const twitter = 'https://twitter.com/vitest_dev'
+export const github = 'https://git.zmcms.cn/framework/utils'
+// export const releases = 'https://github.com/vitest-dev/vitest/releases'
+// export const contributing = 'https://github.com/vitest-dev/vitest/blob/main/CONTRIBUTING.md'
+// export const discord = 'https://chat.vitest.dev'
+// export const twitter = 'https://twitter.com/vitest_dev'
 
 /* Avatar/Image/Sponsors servers */
 export const preconnectLinks = [googleapis, gstatic]

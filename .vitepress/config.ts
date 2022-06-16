@@ -3,8 +3,6 @@ import { version } from '../package.json'
 import {
   font,
   github,
-  ogImage,
-  ogUrl,
   vitestDescription,
   vitestName,
 } from './meta'
@@ -72,7 +70,7 @@ export default defineConfig({
       // TODO: bring sidebar of apis and config back
       '/': [
         {
-          text: '指引',
+          text: 'Guide',
           items: [
             {
               text: '简介',
@@ -86,58 +84,58 @@ export default defineConfig({
               text: '特点',
               link: '/guide/features',
             },
-            {
-              text: 'CLI',
-              link: '/guide/cli',
-            },
-            {
-              text: 'Test Filtering',
-              link: '/guide/filtering',
-            },
-            {
-              text: '覆盖范围',
-              link: '/guide/coverage',
-            },
-            {
-              text: '快照序列化',
-              link: '/guide/snapshot',
-            },
-            {
-              text: '模拟对象',
-              link: '/guide/mocking',
-            },
-            {
-              text: 'Vitest UI',
-              link: '/guide/ui',
-            },
-            {
-              text: '源码内联测试',
-              link: '/guide/in-source',
-            },
-            {
-              text: '测试环境',
-              link: '/guide/test-context',
-            },
-            {
-              text: '扩展匹配器',
-              link: '/guide/extending-matchers',
-            },
+            // {
+            //   text: 'CLI',
+            //   link: '/guide/cli',
+            // },
+            // {
+            //   text: 'Test Filtering',
+            //   link: '/guide/filtering',
+            // },
+            // {
+            //   text: '覆盖范围',
+            //   link: '/guide/coverage',
+            // },
+            // {
+            //   text: '快照序列化',
+            //   link: '/guide/snapshot',
+            // },
+            // {
+            //   text: '模拟对象',
+            //   link: '/guide/mocking',
+            // },
+            // {
+            //   text: 'Vitest UI',
+            //   link: '/guide/ui',
+            // },
+            // {
+            //   text: '源码内联测试',
+            //   link: '/guide/in-source',
+            // },
+            // {
+            //   text: '测试环境',
+            //   link: '/guide/test-context',
+            // },
+            // {
+            //   text: '扩展匹配器',
+            //   link: '/guide/extending-matchers',
+            // },
             {
               text: 'IDE 插件',
               link: '/guide/ide',
             },
-            {
-              text: '调试',
-              link: '/guide/debugging',
-            },
-            {
-              text: '与其他测试框架对比',
-              link: '/guide/comparisons',
-            },
-            {
-              text: '迁移指南',
-              link: '/guide/migration',
-            },
+            // {
+            //   text: '调试',
+            //   link: '/guide/debugging',
+            // },
+            // {
+            //   text: '与其他测试框架对比',
+            //   link: '/guide/comparisons',
+            // },
+            // {
+            //   text: '迁移指南',
+            //   link: '/guide/migration',
+            // },
           ],
         },
         {
