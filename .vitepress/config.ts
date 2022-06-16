@@ -1,19 +1,13 @@
 import { defineConfig } from 'vitepress'
 import { version } from '../package.json'
 import {
-  contributing,
-  discord,
   font,
   github,
   ogImage,
   ogUrl,
-  releases,
-  twitter,
   vitestDescription,
   vitestName,
 } from './meta'
-import { teamMembers } from './contributors'
-import { link } from 'fs'
 
 export default defineConfig({
   lang: 'zh-cn',
@@ -23,19 +17,8 @@ export default defineConfig({
     ['meta', { name: 'theme-color', content: '#ffffff' }],
     ['link', { rel: 'icon', href: '/logo.svg', type: 'image/svg+xml' }],
     ['link', { rel: 'alternate icon', href: '/favicon.ico', type: 'image/png', sizes: '16x16' }],
-    ['meta', { name: 'author', content: `${teamMembers.map(c => c.name).join(', ')} and ${vitestName} contributors` }],
-    ['meta', { name: 'keywords', content: 'vitest, vite, test, coverage, snapshot, react, vue, preact, svelte, solid, lit, ruby, cypress, puppeteer, jsdom, happy-dom, test-runner, jest, typescript, esm, tinypool, tinyspy, c8, node' }],
-    ['meta', { property: 'og:title', content: vitestName }],
-    ['meta', { property: 'og:description', content: vitestDescription }],
-    ['meta', { property: 'og:url', content: ogUrl }],
-    ['meta', { property: 'og:image', content: ogImage }],
-    ['meta', { name: 'twitter:title', content: vitestName }],
-    ['meta', { name: 'twitter:description', content: vitestDescription }],
-    ['meta', { name: 'twitter:image', content: ogImage }],
-    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['link', { href: font, rel: 'stylesheet' }],
     ['link', { rel: 'mask-icon', href: '/logo.svg', color: '#ffffff' }],
-    ['link', { rel: 'apple-touch-icon', href: '/apple-touch-icon.png', sizes: '180x180' }],
   ],
   lastUpdated: true,
   markdown: {

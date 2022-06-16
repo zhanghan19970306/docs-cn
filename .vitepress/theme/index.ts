@@ -12,6 +12,6 @@ if (inBrowser)
 export default {
   ...Theme,
   Layout() {
-    return h(Theme.Layout, null)
+    return h(Theme.Layout)
   },
 }

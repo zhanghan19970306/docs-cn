@@ -18,7 +18,7 @@ import {
 import { optimizePages } from './.vitepress/scripts/assets'
 
 const PWA = VitePWA({
-  outDir: '.vitepress/dist',
+  outDir: 'dist',
   registerType: 'autoUpdate',
   // include all static assets under public/
   includeAssets: fg.sync('**/*.{png,svg,ico,txt}', { cwd: resolve(__dirname, 'public') }),
