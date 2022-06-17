@@ -6,6 +6,17 @@ outline: deep
 
 生成唯一字符串的方法
 
+| | 生成速度 | 可读性 | 防撞性 |
+| - | - | - | - |
+| **andomStr** | 快 | 中等 | 非常低 |
+| **createUuid** | 稍慢 | 弱 | 高 |
+| **createNanoid** | 快 | 中等 | 一般 |
+
+:::tip NOTE
+推荐使用createNanoid
+:::
+
+
 ## randomStr
 
 生成6位随机字符串

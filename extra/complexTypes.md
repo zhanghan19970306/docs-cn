@@ -6,8 +6,6 @@ outline: deep
 
 📦 一系列封装 复合数据类型判断函数 
 
-
-
 ## toRawType
 
 返回一个值的类型
