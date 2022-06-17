@@ -1,11 +1,6 @@
 import { defineConfig } from 'vitepress'
 import { version } from '../package.json'
-import {
-  font,
-  github,
-  vitestDescription,
-  vitestName,
-} from './meta'
+import { font, github, vitestDescription, vitestName } from './meta'
 
 export default defineConfig({
   lang: 'zh-cn',
@@ -14,7 +9,15 @@ export default defineConfig({
   head: [
     ['meta', { name: 'theme-color', content: '#ffffff' }],
     ['link', { rel: 'icon', href: '/logo.svg', type: 'image/svg+xml' }],
-    ['link', { rel: 'alternate icon', href: '/favicon.ico', type: 'image/png', sizes: '16x16' }],
+    [
+      'link',
+      {
+        rel: 'alternate icon',
+        href: '/favicon.ico',
+        type: 'image/png',
+        sizes: '16x16',
+      },
+    ],
     ['link', { href: font, rel: 'stylesheet' }],
     ['link', { rel: 'mask-icon', href: '/logo.svg', color: '#ffffff' }],
   ],
@@ -28,11 +31,11 @@ export default defineConfig({
   themeConfig: {
     logo: '/logo.svg',
 
-    editLink: {
-      repo: 'vitest-dev/docs-cn',
-      branch: 'main',
-      text: '建议更改此页面',
-    },
+    // editLink: {
+    //   repo: 'vitest-dev/docs-cn',
+    //   branch: 'main',
+    //   text: '建议更改此页面',
+    // },
 
     // algolia: {
     //   appId: 'ZTF29HGJ69',
@@ -50,9 +53,7 @@ export default defineConfig({
     //   ],
     // },
 
-    socialLinks: [
-      { icon: 'github', link: github },
-    ],
+    socialLinks: [{ icon: 'github', link: github }],
 
     // footer: {
     //   message: 'Released under the MIT License.',
@@ -61,8 +62,6 @@ export default defineConfig({
 
     nav: [
       { text: '指引', link: '/guide/' },
-      { text: 'API', link: '/api/' },
-      { text: '配置', link: '/config/' },
       { text: `v${version}`, link: '/config/' },
     ],
 
@@ -139,20 +138,90 @@ export default defineConfig({
           ],
         },
         {
-          text: 'API',
+          text: 'BaseType',
           items: [
             {
-              text: 'API 参考',
-              link: '/api/',
+              text: 'isString',
+              link: '/baseType/isString',
+            },
+            {
+              text: 'isNumber',
+              link: '/baseType/isNumber',
+            },
+            {
+              text: 'isBoolean',
+              link: '/baseType/isBoolean',
+            },
+            {
+              text: 'isUndefined',
+              link: '/baseType/isUndefined',
+            },
+            {
+              text: 'isNull',
+              link: '/baseType/isNull',
+            },
+            {
+              text: 'isSymbol',
+              link: '/baseType/isSymbol',
+            },
+            {
+              text: 'isBigInt',
+              link: '/baseType/isBigInt',
+            },
+            {
+              text: 'isNaN',
+              link: '/baseType/isNaN',
             },
           ],
         },
         {
-          text: 'Config',
+          text: 'H5',
           items: [
             {
-              text: '配置 Vitest',
-              link: '/config/',
+              text: 'fixIOSKeyboard',
+              link: '/h5/fixIOSKeyboard',
+            },
+          ],
+        },
+        {
+          text: 'Number',
+          items: [
+            {
+              text: 'limitNumber',
+              link: '/number/limitNumber',
+            },
+            {
+              text: 'randomNumber',
+              link: '/number/randomNumber',
+            },
+          ],
+        },
+        {
+          text: 'String',
+          items: [
+            {
+              text: 'createUuid',
+              link: '/string/createUuid',
+            },
+            {
+              text: 'createNanoid',
+              link: '/string/createNanoid',
+            },
+            {
+              text: 'randomStr',
+              link: '/string/randomStr',
+            },
+          ],
+        }, {
+          text: 'Extra',
+          items: [
+            {
+              text: 'noop',
+              link: '/extra/noop',
+            },
+            {
+              text: 'listToTree',
+              link: '/extra/listToTree',
             },
           ],
         },
