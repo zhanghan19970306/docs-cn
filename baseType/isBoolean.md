@@ -14,12 +14,6 @@ outline: deep
 const isBoolean = (val: unknown): val is boolean => typeof val === 'boolean'
 ```
 
-### Javascript
-
-```javascript
-const isBoolean = (val) => typeof val === 'boolean'
-```
-
 ## 例子
 
 ```javascript

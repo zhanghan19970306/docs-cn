@@ -14,12 +14,6 @@ outline: deep
 const noop = () => {}
 ```
 
-### Javascript
-
-```javascript
-const noop = () => {}
-```
-
 ## 例子
 
 ```javascript

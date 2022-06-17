@@ -41,28 +41,6 @@ const listToTree = <T extends CascaderItem>(
   }, [] as T[])
 ```
 
-### Javascript
-
-```javascript
-const listToTree =(
-  data,
-  parentField,
-  replaceFields = { value: 'value', parentId: 'parentId', childrens: 'childrens' }
-) =>
-  data.reduce((prev, current) => {
-    current[replaceFields.parentId] === parentField &&
-      prev.push({
-        ...current,
-        [replaceFields.childrens]: listToTree(
-          data,
-          current[replaceFields.value],
-          replaceFields
-        ),
-      })
-    return prev
-  }, [])
-```
-
 ## 例子
 
 ```javascript

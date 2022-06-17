@@ -14,12 +14,6 @@ outline: deep
 const { isNaN } = Number
 ```
 
-### Javascript
-
-```javascript
-const { isNaN } = Number
-```
-
 ## 例子
 
 ```javascript

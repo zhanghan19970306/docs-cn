@@ -14,12 +14,6 @@ outline: deep
 const isString = (val: unknown): val is string => typeof val === 'string'
 ```
 
-### Javascript
-
-```javascript
-const isString = (val) => typeof val === 'string'
-```
-
 ## 例子
 
 ```javascript

@@ -14,12 +14,6 @@ outline: deep
 const isSymbol = (val: unknown): val is symbol => typeof val === 'symbol'
 ```
 
-### Javascript
-
-```javascript
-const isSymbol = (val) => typeof val === 'symbol'
-```
-
 ## 例子
 
 ```javascript

@@ -14,12 +14,6 @@ outline: deep
 const isNumber = (val: unknown): val is number => typeof val === 'number' && val === val
 ```
 
-### Javascript
-
-```javascript
-const isNumber = (val) => typeof val === 'number' && val === val
-```
-
 ## 例子
 
 ```javascript

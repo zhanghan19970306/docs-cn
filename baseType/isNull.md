@@ -13,13 +13,6 @@ outline: deep
 ```typescript
 const isNull = (val: unknown): val is null => val === null
 ```
-
-### Javascript
-
-```javascript
-const isNull = (val) => val === null
-```
-
 ## 例子
 
 ```javascript

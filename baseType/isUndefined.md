@@ -14,12 +14,6 @@ outline: deep
 const isUndefined = (val: unknown): val is undefined => val === undefined
 ```
 
-### Javascript
-
-```javascript
-const isUndefined = (val) => val === undefined
-```
-
 ## 例子
 
 ```javascript

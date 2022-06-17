@@ -14,12 +14,6 @@ outline: deep
 const isBigInt = (val: unknown): val is bigint => typeof val === 'bigint'
 ```
 
-### Javascript
-
-```javascript
-const isBigInt = (val) => typeof val === 'bigint'
-```
-
 ## 例子
 
 ```javascript

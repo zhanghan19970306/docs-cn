@@ -224,6 +224,21 @@ export default defineConfig({
               link: '/extra/listToTree',
             },
           ],
+        }, {
+          text: 'browser',
+          items: [
+            {
+              text: 'download',
+              link: '/browser/download',
+            },
+            {
+              text: 'scrollTop',
+              link: '/browser/scrollTop',
+            }, {
+              text: 'env',
+              link: '/browser/env',
+            },
+          ],
         },
       ],
     },
