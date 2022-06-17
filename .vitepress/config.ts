@@ -138,43 +138,6 @@ export default defineConfig({
           ],
         },
         {
-          text: 'BaseType',
-          items: [
-            {
-              text: 'isString',
-              link: '/baseType/isString',
-            },
-            {
-              text: 'isNumber',
-              link: '/baseType/isNumber',
-            },
-            {
-              text: 'isBoolean',
-              link: '/baseType/isBoolean',
-            },
-            {
-              text: 'isUndefined',
-              link: '/baseType/isUndefined',
-            },
-            {
-              text: 'isNull',
-              link: '/baseType/isNull',
-            },
-            {
-              text: 'isSymbol',
-              link: '/baseType/isSymbol',
-            },
-            {
-              text: 'isBigInt',
-              link: '/baseType/isBigInt',
-            },
-            {
-              text: 'isNaN',
-              link: '/baseType/isNaN',
-            },
-          ],
-        },
-        {
           text: 'H5',
           items: [
             {
@@ -200,17 +163,17 @@ export default defineConfig({
           text: 'String',
           items: [
             {
-              text: 'createUuid',
-              link: '/string/createUuid',
+              text: 'unique',
+              link: '/string/unique',
             },
-            {
-              text: 'createNanoid',
-              link: '/string/createNanoid',
-            },
-            {
-              text: 'randomStr',
-              link: '/string/randomStr',
-            },
+            // {
+            //   text: 'createNanoid',
+            //   link: '/string/createNanoid',
+            // },
+            // {
+            //   text: 'randomStr',
+            //   link: '/string/randomStr',
+            // },
           ],
         }, {
           text: 'Extra',
@@ -222,6 +185,14 @@ export default defineConfig({
             {
               text: 'listToTree',
               link: '/extra/listToTree',
+            },
+            {
+              text: 'baseTypes',
+              link: '/extra/baseTypes',
+            },
+            {
+              text: 'complexTypes',
+              link: '/extra/complexTypes',
             },
           ],
         }, {

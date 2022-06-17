@@ -21,15 +21,6 @@ const limitNumber = (
 };
 ```
 
-### Javascript
-
-```javascript
-const limitNumber = (value, min = Number.MIN_VALUE, max = Number.MAX_VALUE) => {
-  min > max && ([min, max] = [max, min]);
-  return Math.max(Math.min(value, max), min);
-};
-```
-
 ## 例子
 
 ```javascript
