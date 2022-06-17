@@ -1,25 +1,14 @@
 import { defineConfig } from 'vitepress'
 import { version } from '../package.json'
-import { font, github, vitestDescription, vitestName } from './meta'
 
 export default defineConfig({
   lang: 'zh-cn',
-  title: vitestName,
-  description: vitestDescription,
+  title: 'Qutils',
+  description: '又快又好小的功能函数类库',
   head: [
     ['meta', { name: 'theme-color', content: '#ffffff' }],
     ['link', { rel: 'icon', href: '/logo.svg', type: 'image/svg+xml' }],
-    [
-      'link',
-      {
-        rel: 'alternate icon',
-        href: '/favicon.ico',
-        type: 'image/png',
-        sizes: '16x16',
-      },
-    ],
-    ['link', { href: font, rel: 'stylesheet' }],
-    ['link', { rel: 'mask-icon', href: '/logo.svg', color: '#ffffff' }],
+    ['link', { href: 'https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;400;600&display=swap', rel: 'stylesheet' }],
   ],
   lastUpdated: true,
   markdown: {
@@ -53,7 +42,7 @@ export default defineConfig({
     //   ],
     // },
 
-    socialLinks: [{ icon: 'github', link: github }],
+    socialLinks: [{ icon: 'github', link: 'https://git.zmcms.cn/framework/utils' }],
 
     // footer: {
     //   message: 'Released under the MIT License.',
